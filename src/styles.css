@@ -1,0 +1,31 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+h4 {
+  margin: 0;
+}
+
+.p-5 {
+  padding: 0.5rem;
+}
+
+.m-5 {
+  margin: 0.5rem;
+}
+
+.border-1 {
+  border: 1px solid #eee;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex.column {
+  flex-direction: column;
+}
+.flex.align-items-start {
+  align-items: flex-start;
+}
