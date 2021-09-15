@@ -8,7 +8,7 @@ export default function App() {
       uid: "firstName",
       type: "text",
       labelName: "First name",
-      defaultValue: "",
+      defaultValue: "jhon",
       required: true
     },
     {
@@ -24,6 +24,21 @@ export default function App() {
       labelName: "Email address",
       defaultValue: "",
       required: true
+    },
+    {
+      uid: "isAdmin",
+      type: "checkbox",
+      labelName: "Is Administrator",
+      defaultValue: false,
+      required: false
+    },
+    {
+      uid: "gender",
+      type: "radio",
+      labelName: "Gender",
+      defaultValue: "Male",
+      options: "Male,Female",
+      required: false
     }
   ];
   const [formState, setFormState] = useState({ firstName: "jhon" });
