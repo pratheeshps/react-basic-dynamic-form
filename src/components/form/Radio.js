@@ -13,8 +13,7 @@ function Radio({ id, value, defaultValue, options, ...rest }) {
       {options.split(",").map((option) => {
         const groupid = `${id}-${option.replace(/\s/g, "")}`;
         return (
-          <div key={`${groupid}-group`}>
-            <Label htmlFor={groupid} labelName={option} />
+          <div key={`${groupid}-group`} className="mr-5">
             <input
               id={groupid}
               name={id}
@@ -24,6 +23,7 @@ function Radio({ id, value, defaultValue, options, ...rest }) {
               onChange={handleChange}
               {...rest}
             />
+            <Label htmlFor={groupid} labelName={option} />
           </div>
         );
       })}

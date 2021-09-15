@@ -1,6 +1,5 @@
 .App {
   font-family: sans-serif;
-  text-align: center;
 }
 
 h4 {
@@ -13,6 +12,14 @@ h4 {
 
 .m-5 {
   margin: 0.5rem;
+}
+
+.mb-5 {
+  margin-bottom: 0.5rem;
+}
+
+.mr-5 {
+  margin-right: 0.5rem;
 }
 
 .border-1 {

@@ -8,7 +8,7 @@ export default function App() {
       uid: "firstName",
       type: "text",
       labelName: "First name",
-      defaultValue: "jhon",
+      defaultValue: "",
       required: true
     },
     {
@@ -26,11 +26,11 @@ export default function App() {
       required: true
     },
     {
-      uid: "isAdmin",
-      type: "checkbox",
-      labelName: "Is Administrator",
-      defaultValue: false,
-      required: false
+      uid: "password",
+      type: "password",
+      labelName: "Password",
+      defaultValue: "",
+      required: true
     },
     {
       uid: "gender",
@@ -39,9 +39,32 @@ export default function App() {
       defaultValue: "Male",
       options: "Male,Female",
       required: false
+    },
+    {
+      uid: "country",
+      type: "select",
+      labelName: "Country",
+      defaultValue: "India",
+      options: "France,Germany,India,Russia,United States",
+      required: true
+    },
+    {
+      uid: "isAdmin",
+      type: "checkbox",
+      labelName: "Is Administrator",
+      defaultValue: false,
+      required: false
+    },
+    {
+      uid: "description",
+      type: "textarea",
+      labelName: "Description",
+      defaultValue: "",
+      required: true
     }
   ];
-  const [formState, setFormState] = useState({ firstName: "jhon" });
+
+  const [formState, setFormState] = useState({});
 
   const updateFormState = ({ uid, value }) => {
     const newState = { ...formState, [uid]: value };
